@@ -1,0 +1,67 @@
+Introdução winget
+Fonte:	https://youtu.be/OYF0hWHAicc
+		https://winstall.app/
+
+
+# gerenciamento winget
+winget install
+winget uninstall
+winget list
+winget upgrade
+winget upgrade --all
+
+# exportar e importar a lista
+winget export -o "D:\backup\minhalista.json"
+winget import -i "D:\backup\minhalista.json"
+
+# alguns apps
+winget install --id=Google.Chrome -e ;
+winget install --id=Mozilla.Firefox -e ;
+winget install --id=VideoLAN.VLC -e ;
+winget install --id=Microsoft.WindowsTerminal -e ;
+winget install --id=Microsoft.Powershell --source winget ;
+winget install --id=7zip.7zip -e ;
+winget install --id=TheDocumentFoundation.LibreOffice.LTS -e;
+winget install --id=AnyDeskSoftwareGmbH.AnyDesk -e ;
+winget install --id=Skillbrains.Lightshot -e ;
+winget install --id=GlavSoft.TightVNC -e ;
+
+# runtimes
+winget install --id=Microsoft.dotNetFramework -e ;
+winget install --id=Microsoft.DotNet.Runtime.5 -e ;
+winget install --id=Microsoft.DotNet.Runtime.6 -e ;
+winget install --id=Microsoft.DotNet.Runtime.7 -e ;
+winget install --id=Microsoft.VCRedist.2005.x64 -e ;
+winget install --id=Microsoft.VCRedist.2008.x64 -e ;
+winget install --id=Microsoft.VCRedist.2010.x64 -e ;
+winget install --id=Microsoft.VCRedist.2012.x64 -e ;
+winget install --id=Microsoft.VCRedist.2013.x64 -e ;
+winget install --id=Microsoft.VCRedist.2015+.x64 -e ;
+winget install --id=Oracle.JavaRuntimeEnvironment -e ;
+
+# extras
+winget install --id=MiniTool.PartitionWizard.Free -e ;
+winget install --id=OBSProject.OBSStudio -e ;
+winget install --id=Flameshot.Flameshot -e ;
+winget install --id=Oracle.VirtualBox -e ;
+winget install --id=TeamViewer.TeamViewer -e ;
+winget install --id=RealVNC.VNCViewer -e ;
+winget install --id=Transmission.Transmission -e ;
+winget install --id=uGetdm.uGet -e ;
+winget install --id=WinSCP.WinSCP -e ;
+winget install --id=Valve.Steam -e ;
+winget install --id=Adobe.Acrobat.Reader.64-bit -e ;
+winget install --id=Foxit.FoxitReader -e ;
+winget install --id=Rufus.Rufus -e ;
+winget install --id=ByteDance.CapCut  -e ;
+winget install --id=Microsoft.PowerToys -e ;
+
+# dev
+winget install --id=Microsoft.VisualStudioCode -e ;
+winget install --id=Microsoft.VisualStudio.2022.Community -e ;
+winget install --id=Git.Git -e ;
+winget install --id=Google.AndroidStudio -e ;
+
+#
+winget install --id=Discord.Discord -e;
+winget install --id=Telegram.TelegramDesktop -e;
