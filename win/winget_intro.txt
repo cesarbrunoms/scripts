@@ -62,6 +62,9 @@ winget install --id=Microsoft.VisualStudio.2022.Community -e ;
 winget install --id=Git.Git -e ;
 winget install --id=Google.AndroidStudio -e ;
 
-#
-winget install --id=Discord.Discord -e;
-winget install --id=Telegram.TelegramDesktop -e;
+# chat
+winget install --id=Discord.Discord -e ;
+winget install --id=Telegram.TelegramDesktop -e ;
+
+# chat local
+winget install --id=BeeBEEP.BeeBEEP -e ;
