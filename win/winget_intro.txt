@@ -40,6 +40,7 @@ winget install --id=Microsoft.VCRedist.2015+.x64 -e ;
 winget install --id=Oracle.JavaRuntimeEnvironment -e ;
 
 # extras
+winget install --id=Dropbox.Dropbox -e ;
 winget install --id=MiniTool.PartitionWizard.Free -e ;
 winget install --id=OBSProject.OBSStudio -e ;
 winget install --id=Flameshot.Flameshot -e ;
