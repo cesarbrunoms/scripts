@@ -1,10 +1,10 @@
-# by bruno.cesar@outlook.it
+### by bruno.cesar@outlook.it
 # Fonte: https://youtu.be/mmXzYxR7s9c
 
-# 1 - Status to know if it is enabled or disabled
-run cmd or powershell as administrator
+### 1 - Status to know if it is enabled or disabled
+# run PowerShell as administrator
 get-executionpolicy
 
-# 2 - Enable execution script powershell
-run cmd or powershell as administrator
+### 2 - Enable execution script powershell
+# run PowerShell as administrator
 set-ExecutionPolicy unrestricted
