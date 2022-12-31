@@ -63,6 +63,7 @@ winget install --id=Microsoft.VisualStudioCode -e --accept-package-agreements --
 winget install --id=Microsoft.VisualStudio.2022.Community -e --accept-package-agreements --accept-source-agreements ;
 winget install --id=Git.Git -e --accept-package-agreements --accept-source-agreements ;
 winget install --id=Google.AndroidStudio -e --accept-package-agreements --accept-source-agreements ;
+winget install --id=ApacheFriends.Xampp.7.4 -e --accept-package-agreements --accept-source-agreements ;
 
 # chat
 winget install --id=Discord.Discord -e --accept-package-agreements --accept-source-agreements ;
