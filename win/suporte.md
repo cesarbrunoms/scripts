@@ -79,3 +79,35 @@ NETSH interface set interface name=Ethernet admin=ENABLE
 
 ~~~
 
+<h3>Network Folder Mapping</h3>
+
+~~~shell
+#\\samba-02\semsau
+New-PSDrive –Name “V” –PSProvider FileSystem –Root “\\samba-02\semsau” –Persist  
+
+~~~
+
+~~~shell
+#\\arquivos-ad\semsau-fms$
+New-PSDrive –Name “W” –PSProvider FileSystem –Root “\\arquivos-ad\semsau-fms$” –Persist
+~~~
+
+~~~shell
+#\\arquivos-ad\semsau-pad$
+New-PSDrive –Name “X” –PSProvider FileSystem –Root “\\arquivos-ad\semsau-pad$” –Persist  
+
+~~~
+
+~~~shell
+#\\arquivos-ad\semsau-atencao-basica$
+New-PSDrive –Name “Y” –PSProvider FileSystem –Root “\\arquivos-ad\semsau-atencao-basica$” –Persist  
+
+~~~
+
+~~~shell
+#\\srv-arquivos-02\semsau-visa$
+New-PSDrive –Name “Z” –PSProvider FileSystem –Root “\\srv-arquivos-02\semsau-visa$” –Persist  
+
+~~~
+
+
