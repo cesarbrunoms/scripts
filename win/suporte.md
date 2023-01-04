@@ -1,5 +1,12 @@
 <h1>Suporte</h1>
 
+<h3>Enable execution script PowerShell: Open admin CMD run command:</h3>
+
+```shell
+PowerShell -Command "set-ExecutionPolicy unrestricted"  
+
+```
+
 <h3>Add Credential</h3>
 
 ~~~shell
