@@ -1,6 +1,10 @@
 <h1>Suporte</h1>
-<p>Source: <br> 
-<a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a></p>
+<div>
+Source: <br> 
+<a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
+<a href="https://github.com/cesarbrunoms/scripts/blob/main/win/1.0_winget_chocolatey.md" target="_blank">Install APPs</a>
+</div>
+ 
 <h3>Enable execution script PowerShell: Open admin CMD run command:</h3>
 
 ```shell
