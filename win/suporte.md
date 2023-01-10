@@ -3,30 +3,36 @@
 Source: <br> 
 <a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
 <a href="https://github.com/cesarbrunoms/scripts/blob/main/win/1.0_winget_chocolatey.md" target="_blank">Install APPs</a>
-</div>
+</div><br>
+  
+<details><summary>Enable execution script PowerShell: Open admin CMD run command:</summary>
  
-<h3>Enable execution script PowerShell: Open admin CMD run command:</h3>
-
-```shell
+ ~~~shell
 PowerShell -Command "set-ExecutionPolicy unrestricted"  
 
-```
+~~~  
+</details>
 
-<h3>Add Credential</h3>
 
-~~~shell
+<details><summary>Add Credential</summary>
+ 
+ ~~~shell
 cmdkey /add:192.168.0.34 /user:padrao /pass:123456  
 
 ~~~
+</details>
 
-<h3>Enable Administrador user</h3>
+
+<details><summary>Enable Administrador user</summary>
 
 ~~~shell
 net user administrador /active:yes  
 
 ~~~
+</details>
 
-<h3>Rename Computer</h3>
+
+<details><summary>Rename Computer</summary>
 
 ~~~shell
 Write-Host "Rename Computer"
@@ -35,30 +41,38 @@ Rename-Computer -NewName $RENAME
 -Restart  
 
 ~~~
+</details>
 
-<h3>CHKDSK</h3>
+
+<details><summary>CHKDSK</summary>
 
 ~~~shell
 chkdsk c: /r  
 
 ~~~
+</details>
 
-<h3>SFC / DISM</h3>
+
+<details><summary>SFC / DISM</summary>
 
 ~~~shell
 sfc /scannow
 DISM /Online /Cleanup-image /Restorehealth  
 
 ~~~
+</details>
 
-<h3>Update User Policy</h3>
+
+<details><summary>Update User Policy</summary>
 
 ~~~shell
 gpupdate /force  
 
 ~~~
+</details>
+ 
 
-<h3>Refresh Interface Network</h3>
+<details><summary>Refresh Interface Network</summary>
 
 ~~~shell
 #flushdns
@@ -83,8 +97,10 @@ NETSH interface set interface name=Ethernet admin=DISABLE
 NETSH interface set interface name=Ethernet admin=ENABLE  
 
 ~~~
+</details>
 
-<h3>Network Folder Mapping</h3>
+
+<details><summary>Network Folder Mapping</summary>
 
 ~~~shell
 #\\samba-02\semsau
@@ -114,8 +130,10 @@ New-PSDrive –Name “Y” –PSProvider FileSystem –Root “\\arquivos-ad\se
 New-PSDrive –Name “Z” –PSProvider FileSystem –Root “\\srv-arquivos-02\semsau-visa$” –Persist  
 
 ~~~
+</details>
 
-<h3>Tweaks</h3>
+
+<details><summary>Tweaks</summary>
 
 ~~~shell
 # *** Desabilitar hibernação HD/SSD e demais configs de energia***
@@ -203,3 +221,4 @@ reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVer
 reg ADD "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v DisableSearchBoxSuggestions /d 1 /t REG_DWORD /f  
 
 ~~~
+</details>
