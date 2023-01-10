@@ -5,7 +5,7 @@ Source: <br>
 <a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
 </div><br>
   
-<details><summary>Enable execution script PowerShell: Open admin CMD run command:</summary>
+<details><summary>Enable execution script PowerShell</summary>
  
  ~~~shell
 PowerShell -Command "set-ExecutionPolicy unrestricted"  
