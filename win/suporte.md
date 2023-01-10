@@ -56,14 +56,14 @@ chkdsk c: /r
 <details><summary>Defrag Windows</summary>
 
 ~~~shell
-# Executando DEFRAG HD
-# equivalente: cmd admin: defrag C: /v
+# Running DEFRAG HD
+# Like: cmd admin: defrag C: /v
 Optimize-Volume -DriveLetter C -Defrag -TierOptimize -Verbose  
   
 ~~~
 
 ~~~shell
-# Executando DEFRAG SSD
+# Running DEFRAG SSD
 Optimize-Volume -DriveLetter C -ReTrim -Verbose  
   
 ~~~
