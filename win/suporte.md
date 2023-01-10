@@ -53,6 +53,23 @@ chkdsk c: /r
 </details>
 
 
+<details><summary>Defrag Windows</summary>
+
+~~~shell
+# Executando DEFRAG HD
+# equivalente: cmd admin: defrag C: /v
+Optimize-Volume -DriveLetter C -Defrag -TierOptimize -Verbose  
+  
+~~~
+
+~~~shell
+# Executando DEFRAG SSD
+Optimize-Volume -DriveLetter C -ReTrim -Verbose  
+  
+~~~
+</details>
+
+
 <details><summary>SFC / DISM</summary>
 
 ~~~shell
@@ -70,7 +87,26 @@ gpupdate /force
 
 ~~~
 </details>
- 
+
+
+<details><summary>Restart print spooler service</summary>
+
+~~~shell
+# Stop print spooler service
+Stop-Service -Name Spooler -Force
+
+# To delete the files
+Remove-Item -Path "$env:SystemRoot\System32\spool\PRINTERS\*.*"
+
+# Start print spooler service
+Start-Service -Name Spooler
+
+# Restart print spooler service
+Restart-Service -Name Spooler -Force  
+  
+~~~
+</details>
+
 
 <details><summary>Refresh Interface Network</summary>
 
