@@ -1,9 +1,7 @@
--------------------------------------------------------------------------------
+----------------------------------------------------------------------
 <h1>Suporte</h1>
-<div>
-Source: <br> 
-<a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
-</div><br>
+Source: <a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
+<br>
   
 <details><summary>Enable execution script PowerShell</summary>
  
@@ -259,8 +257,7 @@ reg ADD "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v Disa
 ~~~
 </details>
 
--------------------------------------------------------------------------------
-
+----------------------------------------------------------------------
 <h1>Winget and Chocolatey</h1>
 
 <details><summary>Install Chocolatey</summary>
