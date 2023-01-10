@@ -263,7 +263,7 @@ reg ADD "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v Disa
 
 <h1>Winget and Chocolatey</h1>
 
-<details><summary>Install Chocolatey: Open admin CMD run command:</summary>
+<details><summary>Install Chocolatey</summary>
 
 ~~~shell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))  
