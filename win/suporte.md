@@ -3,6 +3,16 @@
 Source: <a href="https://drive.google.com/drive/folders/1QjqTl54HSL6prjwktyvCKqzsRAjF1QN5?usp=sharing" target="_blank">Google Drive</a><br>
 <br>
   
+<details><summary>Script DTI PMA</summary>
+ 
+ ~~~shell
+# Este Script esta em constante evolução!
+irm https://raw.githubusercontent.com/cesarbrunoms/scripts/main/win/dti_pma.ps1 | iex  
+  
+~~~  
+</details>
+
+  
 <details><summary>Enable execution script PowerShell</summary>
  
  ~~~shell
