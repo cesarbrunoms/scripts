@@ -1,60 +1,52 @@
 ##########
 # Win10 Initial Setup Script
 # Author: cesarbrunoms <bruno.cesar@outlook.it>
-# Version: 1.4, 2022-12-30
+# Version: 1.8, 2023-01-11
 ##########
 
 # Ask for elevated permissions if required
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")) {
 	Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+	# Enable execution script PowerShell
+	Start-Process powershell.exe "-command set-ExecutionPolicy unrestricted"
 	Exit
 }
 
+
 function DisplayMenu {
 	Clear-Host
+	Write-Host
+	(Get-Date).ToString("dd/MM/yyyy")
+	Write-Host "Computador:" $env:computername
+	Write-Host "Usuario:" $env:username
+	Write-Host
 	Write-Host @"
-================= MENU ================
-*                                     *
-* 1. Install PACK Essential APPs      *
-*    a. 7-Zip                         *
-*    b. Firefox                       *
-*    c. Foxit Reader                  *
-*    d. Google Chrome                 * 
-*    e. LibreOffice LTS               *
-*    f. Lightshot                     *
-*    g. RustDesk                      *
-*    h. VLC                           * 
-*                                     *
-* 2. Install PACK Essential Runtimes  *
-*    i. DotNet Runtime 4              *
-*    j. DotNet Runtime 5              *
-*    k. DotNet Runtime 6              *
-*    l. DotNet Runtime 7              *
-*    m. VCRdist 2005                  *
-*    n. VCRdist 2008                  *
-*    o. VCRdist 2010                  *
-*    p. VCRdist 2012                  *
-*    q. VCRdist 2013                  *
-*    r. VCRdist 2015+                 *
-*    s. Java 8 JDK                    *
-*                                     *
-* 3. Add Credential Publica           *
-*                                     *
-* 4. Enable Administrador user        *
-*                                     *
-* 5. Rename Computer -> Restart       *
-*                                     *
-* 6. CHKDSK -> Restart                *
-*                                     *
-* 7. SFC and DISM                     *
-*                                     *
-* 8. Update User Policy               *
-*                                     *
-* 9. Refresh Interfaces Network       *
-*                                     *
-* 10. Exit                            *
-*                                     *
-*=====================================*
++--------------------------------- DTI PMA ---------------------------------+
+|                                     |                                     |
+| 1. Instalar PACK Essencial APPs     | 3. Add Credencial Publica           | 
+|    a. 7-Zip                         |                                     |
+|    b. Firefox                       | 4. Habilitar User Administrador     |
+|    c. Foxit Reader                  |                                     |
+|    d. Google Chrome                 | 5. Renomear Computador -> Restart   | 
+|    e. LibreOffice LTS               |                                     |
+|    f. Lightshot                     | 6. CHKDSK -> Restart                |
+|    g. RustDesk                      |                                     |
+|    h. VLC                           | 7. SFC and DISM                     | 
+|                                     |                                     |
+| 2. Instalar PACK Essencial Runtimes | 8. Atualizar Politica Usuario       |
+|    i. DotNet Runtime 4              |                                     |
+|    j. DotNet Runtime 5              | 9. Refresh Interfaces Rede          |
+|    k. DotNet Runtime 6              |                                     |
+|    l. DotNet Runtime 7              | 10. Exit                            |
+|    m. VCRdist 2005                  |                                     |
+|    n. VCRdist 2008                  |                                     |
+|    o. VCRdist 2010                  |                                     |
+|    p. VCRdist 2012                  |                                     |
+|    q. VCRdist 2013                  |                                     |
+|    r. VCRdist 2015+                 |                                     |
+|    s. Java 8 JDK                    |                                     |
+|                                     |                                     |
++---------------------------------------------------------------------------+
 "@
 
 	
